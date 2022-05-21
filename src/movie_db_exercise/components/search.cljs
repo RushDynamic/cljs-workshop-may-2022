@@ -22,6 +22,6 @@
    [:input {:default-value "Enter a movie title"
             :on-change #(reset! movie-title (.-value (.-target %)))
             :on-blur #(when (= "" (.-value (.-target %)))
-                         (set! (.-value (.-target %)) "Enter a movie title"))
+                        (set! (.-value (.-target %)) "Enter a movie title"))
             :on-click #(when (= "Enter a movie title" (.-value (.-target %)))
                          (set! (.-value (.-target %)) ""))}]])

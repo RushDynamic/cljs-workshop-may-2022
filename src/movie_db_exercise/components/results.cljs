@@ -1,11 +1,10 @@
 (ns movie-db-exercise.components.results
-  (:require    
-   [reagent.core :as r]
+  (:require
    [movie-db-exercise.components.search :as search]))
 
 (defn box []
   (when @search/loaded?
-    [:div {:style 
+    [:div {:style
            {:display :flex
             :flex-direction :column
             :align-items :center}}
